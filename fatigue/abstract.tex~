@@ -1,0 +1,11 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, verbatim, hyperref, fullpage}
+\author{Patrick Foley}
+\title{Weekly Update - September 5, 2013}
+
+\begin{document}
+
+\maketitle{}
+
+
+\end{document}
