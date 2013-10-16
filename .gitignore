@@ -1,0 +1,9 @@
+*.pptx
+*.ppt
+
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.run.xml
