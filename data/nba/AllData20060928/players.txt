@@ -1,0 +1,668 @@
++----------+-----------------+-----------------+--------+-----------+-----------+----------------+
+| PlayerID | PlayerName      | PlayerTrueName  | League | TeamName3 | Year      | GameIDFound    |
++----------+-----------------+-----------------+--------+-----------+-----------+----------------+
+|        1 | J. Howard       | J. Howard       | NBA    | DAL       | 2005-2006 | 20051122HOUDAL |
+|        1 | Howard          | J. Howard       | NBA    | DAL       | 2005-2006 | 20051101DALPHX |
+|        2 | K. Thomas       | K. Thomas       | NBA    | PHX       | 2005-2006 | 20051106SACPHX |
+|        2 | Thomas          | K. Thomas       | NBA    | PHX       | 2005-2006 | 20051101DALPHX |
+|        3 | Dampier         | Dampier         | NBA    | DAL       | 2005-2006 | 20051101DALPHX |
+|        4 | Marion          | Marion          | NBA    | PHX       | 2005-2006 | 20051101DALPHX |
+|        5 | Nowitzki        | Nowitzki        | NBA    | DAL       | 2005-2006 | 20051101DALPHX |
+|        6 | Terry           | Terry           | NBA    | DAL       | 2005-2006 | 20051101DALPHX |
+|        7 | R. Bell         | R. Bell         | NBA    | PHX       | 2005-2006 | 20060301MILPHX |
+|        7 | Bell            | R. Bell         | NBA    | PHX       | 2005-2006 | 20051101DALPHX |
+|        8 | Nash            | Nash            | NBA    | PHX       | 2005-2006 | 20051101DALPHX |
+|        9 | Christie        | Christie        | NBA    | DAL       | 2005-2006 | 20051101DALPHX |
+|       10 | Jones           | J. Jones        | NBA    | PHX       | 2005-2006 | 20051101DALPHX |
+|       10 | J. Jones        | J. Jones        | NBA    | PHX       | 2005-2006 | 20051116MEMPHX |
+|       11 | Van Horn        | Van Horn        | NBA    | DAL       | 2005-2006 | 20051101DALPHX |
+|       12 | Diaw            | Diaw            | NBA    | PHX       | 2005-2006 | 20051101DALPHX |
+|       13 | J. Jackson      | J. Jackson      | NBA    | LAL       | 2005-2006 | Transaction Li |
+|       13 | J. Jackson      | J. Jackson      | NBA    | PHX       | 2005-2006 | 20051103PHXLAL |
+|       13 | Jackson         | J. Jackson      | NBA    | PHX       | 2005-2006 | 20051101DALPHX |
+|       14 | M. Daniels      | M. Daniels      | NBA    | DAL       | 2005-2006 | 20060215WASDAL |
+|       14 | Daniels         | M. Daniels      | NBA    | DAL       | 2005-2006 | 20051101DALPHX |
+|       15 | D. Harris       | D. Harris       | NBA    | DAL       | 2005-2006 | 20051101DALPHX |
+|       16 | Barbosa         | Barbosa         | NBA    | PHX       | 2005-2006 | 20051101DALPHX |
+|       17 | Diop            | Diop            | NBA    | DAL       | 2005-2006 | 20051101DALPHX |
+|       18 | Grant           | Grant           | NBA    | PHX       | 2005-2006 | 20051101DALPHX |
+|       19 | Armstrong       | Armstrong       | NBA    | DAL       | 2005-2006 | 20051101DALPHX |
+|       20 | House           | House           | NBA    | PHX       | 2005-2006 | 20051101DALPHX |
+|       21 | Martin          | K. Martin       | NBA    | DEN       | 2005-2006 | 20051101DENSAS |
+|       21 | K. Martin       | K. Martin       | NBA    | DEN       | 2005-2006 | 20051109SACDEN |
+|       22 | Nesterovic      | Nesterovic      | NBA    | SAN       | 2005-2006 | 20051101DENSAS |
+|       23 | Camby           | Camby           | NBA    | DEN       | 2005-2006 | 20051101DENSAS |
+|       24 | Ginobili        | Ginobili        | NBA    | SAN       | 2005-2006 | 20051101DENSAS |
+|       25 | Anthony         | Anthony         | NBA    | DEN       | 2005-2006 | 20051101DENSAS |
+|       26 | Duncan          | Duncan          | NBA    | SAN       | 2005-2006 | 20051101DENSAS |
+|       27 | Lenard          | V. Lenard       | NBA    | POR       | 2005-2006 | Transaction Li |
+|       27 | Lenard          | Lenard          | NBA    | DEN       | 2005-2006 | 20051101DENSAS |
+|       28 | Bowen           | B. Bowen        | NBA    | SAN       | 2005-2006 | 20051101DENSAS |
+|       28 | B. Bowen        | B. Bowen        | NBA    | SAN       | 2005-2006 | 20051117HOUSAS |
+|       29 | Finley          | Finley          | NBA    | SAN       | 2005-2006 | 20051101DENSAS |
+|       30 | Parker          | T. Parker       | NBA    | SAN       | 2005-2006 | 20051101DENSAS |
+|       30 | T. Parker       | T. Parker       | NBA    | SAN       | 2005-2006 | 20051105SASDAL |
+|       31 | A. Miller       | A. Miller       | NBA    | DEN       | 2005-2006 | 20051109SACDEN |
+|       31 | Miller          | A. Miller       | NBA    | DEN       | 2005-2006 | 20051101DENSAS |
+|       32 | Horry           | Horry           | NBA    | SAN       | 2005-2006 | 20051101DENSAS |
+|       33 | Barry           | Barry           | NBA    | SAN       | 2005-2006 | 20051101DENSAS |
+|       34 | Nene            | Nene            | NBA    | DEN       | 2005-2006 | 20051101DENSAS |
+|       35 | Boykins         | Boykins         | NBA    | DEN       | 2005-2006 | 20051101DENSAS |
+|       36 | Najera          | Najera          | NBA    | DEN       | 2005-2006 | 20051101DENSAS |
+|       37 | Oberto          | Oberto          | NBA    | SAN       | 2005-2006 | 20051101DENSAS |
+|       38 | Van Exel        | Van Exel        | NBA    | SAN       | 2005-2006 | 20051101DENSAS |
+|       39 | Buckner         | Buckner         | NBA    | DEN       | 2005-2006 | 20051101DENSAS |
+|       40 | Mohammed        | Mohammed        | NBA    | SAN       | 2005-2006 | 20051101DENSAS |
+|       41 | D. Johnson      | D. Johnson      | NBA    | DEN       | 2005-2006 | 20051115DENDAL |
+|       41 | Johnson         | D. Johnson      | NBA    | DEN       | 2005-2006 | 20051101DENSAS |
+|       42 | Elson           | Elson           | NBA    | DEN       | 2005-2006 | 20051101DENSAS |
+|       44 | Webber          | Webber          | NBA    | PHL       | 2005-2006 | 20051101MILPHI |
+|       45 | Redd            | Redd            | NBA    | MIL       | 2005-2006 | 20051101MILPHI |
+|       46 | Iverson         | Iverson         | NBA    | PHL       | 2005-2006 | 20051101MILPHI |
+|       47 | Ford            | T. Ford         | NBA    | MIL       | 2005-2006 | 20051101MILPHI |
+|       47 | T. Ford         | T. Ford         | NBA    | MIL       | 2005-2006 | 20051212MILNYK |
+|       48 | Simmons         | Simmons         | NBA    | MIL       | 2005-2006 | 20051101MILPHI |
+|       49 | Bogut           | Bogut           | NBA    | MIL       | 2005-2006 | 20051101MILPHI |
+|       50 | Hunter          | S. Hunter       | NBA    | PHL       | 2005-2006 | 20051101MILPHI |
+|       50 | S. Hunter       | S. Hunter       | NBA    | PHL       | 2005-2006 | 20060329DETPHI |
+|       51 | Magloire        | Magloire        | NBA    | MIL       | 2005-2006 | 20051101MILPHI |
+|       52 | Iguodala        | Iguodala        | NBA    | PHL       | 2005-2006 | 20051101MILPHI |
+|       53 | J. Thomas       | J. Thomas       | NBA    | CHI       | 2005-2006 | Transaction Li |
+|       53 | Thomas          | Thomas          | NBA    | PHL       | 2005-2006 | 20051101MILPHI |
+|       53 | Thomas          | J. Thomas       | NBA    | CHI       | 2005-2006 | Transaction Li |
+|       54 | Korver          | Korver          | NBA    | PHL       | 2005-2006 | 20051101MILPHI |
+|       55 | M. Williams     | M. Williams     | NBA    | MIL       | 2005-2006 | 20051101MILPHI |
+|       55 | Williams        | M. Williams     | NBA    | MIL       | 2005-2006 | 20051102MILNJN |
+|       56 | Gadzuric        | Gadzuric        | NBA    | MIL       | 2005-2006 | 20051101MILPHI |
+|       57 | Nailon          | L. Nailon       | NBA    | CLE       | 2005-2006 | Transaction Li |
+|       57 | Nailon          | Nailon          | NBA    | PHL       | 2005-2006 | 20051101MILPHI |
+|       58 | Kukoc           | Kukoc           | NBA    | MIL       | 2005-2006 | 20051101MILPHI |
+|       59 | Salmons         | Salmons         | NBA    | PHL       | 2005-2006 | 20051101MILPHI |
+|       60 | Bell            | C. Bell         | NBA    | MIL       | 2005-2006 | 20051101MILPHI |
+|       60 | C. Bell         | C. Bell         | NBA    | MIL       | 2005-2006 | 20060301MILPHX |
+|       61 | Ollie           | Ollie           | NBA    | PHL       | 2005-2006 | 20051101MILPHI |
+|       62 | Wells           | Wells           | NBA    | SAC       | 2005-2006 | 20051101SACNOK |
+|       63 | Smith           | J. Smith        | NBA    | NOK       | 2005-2006 | 20051101SACNOK |
+|       63 | J. Smith        | J. Smith        | NBA    | NOK       | 2005-2006 | 20051109ORLNOK |
+|       64 | Abdur-Rahim     | Abdur-Rahim     | NBA    | SAC       | 2005-2006 | 20051101SACNOK |
+|       65 | Miller          | B. Miller       | NBA    | SAC       | 2005-2006 | 20051102SACHOU |
+|       65 | B. Miller       | B. Miller       | NBA    | SAC       | 2005-2006 | 20051101SACNOK |
+|       66 | Brown           | P. Brown        | NBA    | NOK       | 2005-2006 | 20051101SACNOK |
+|       66 | P. Brown        | P. Brown        | NBA    | NOK       | 2005-2006 | 20051102NOKCLE |
+|       67 | Stojakovic      | Stojakovic      | NBA    | SAC       | 2005-2006 | 20051101SACNOK |
+|       67 | Stojakovic      | P. Stojakovic   | NBA    | IND       | 2005-2006 | Transaction Li |
+|       68 | Bibby           | M. Bibby        | NBA    | SAC       | 2005-2006 | 20051101SACNOK |
+|       68 | M. Bibby        | M. Bibby        | NBA    | SAC       | 2005-2006 | 20060124SACPHI |
+|       69 | D. West         | D. West         | NBA    | NOK       | 2005-2006 | 20051207BOSNOK |
+|       69 | West            | D. West         | NBA    | NOK       | 2005-2006 | 20051101SACNOK |
+|       70 | Paul            | Paul            | NBA    | NOK       | 2005-2006 | 20051101SACNOK |
+|       71 | Nachbar         | B. Nachbar      | NBA    | NJN       | 2005-2006 | Transaction Li |
+|       71 | Nachbar         | Nachbar         | NBA    | NOK       | 2005-2006 | 20051101SACNOK |
+|       72 | Claxton         | Claxton         | NBA    | NOK       | 2005-2006 | 20051101SACNOK |
+|       73 | Andersen        | Andersen        | NBA    | NOK       | 2005-2006 | 20051101SACNOK |
+|       74 | Thomas          | K. Thomas       | NBA    | SAC       | 2005-2006 | 20051101SACNOK |
+|       74 | K. Thomas       | K. Thomas       | NBA    | SAC       | 2005-2006 | 20051106SACPHX |
+|       75 | Hart            | Hart            | NBA    | SAC       | 2005-2006 | 20051101SACNOK |
+|       76 | Butler          | R. Butler       | NBA    | NOK       | 2005-2006 | 20051101SACNOK |
+|       76 | R. Butler       | R. Butler       | NBA    | NOK       | 2005-2006 | 20060120NOKWAS |
+|       77 | K. Martin       | K. Martin       | NBA    | SAC       | 2005-2006 | 20051109SACDEN |
+|       77 | Martin          | K. Martin       | NBA    | SAC       | 2005-2006 | 20051101SACNOK |
+|       78 | Skinner         | B. Skinner      | NBA    | POR       | 2005-2006 | Transaction Li |
+|       78 | Skinner         | Skinner         | NBA    | SAC       | 2005-2006 | 20051101SACNOK |
+|       79 | Mason           | Mason           | NBA    | NOK       | 2005-2006 | 20051101SACNOK |
+|       80 | Garcia          | Garcia          | NBA    | SAC       | 2005-2006 | 20051101SACNOK |
+|       81 | Vroman          | Vroman          | NBA    | NOK       | 2005-2006 | 20051101SACNOK |
+|       82 | Williamson      | Williamson      | NBA    | SAC       | 2005-2006 | 20051101SACNOK |
+|       83 | Bass            | Bass            | NBA    | NOK       | 2005-2006 | 20051101SACNOK |
+|       84 | Macijauskas     | Macijauskas     | NBA    | NOK       | 2005-2006 | 20051101SACNOK |
+|       85 | Price           | Price           | NBA    | SAC       | 2005-2006 | 20051101SACNOK |
+|       86 | J. Johnson      | J. Johnson      | NBA    | ATL       | 2005-2006 | 20051117ATLDAL |
+|       86 | Johnson         | J. Johnson      | NBA    | ATL       | 2005-2006 | 20051102ATLGSW |
+|       87 | Davis           | B. Davis        | NBA    | GOS       | 2005-2006 | 20051102ATLGSW |
+|       87 | B. Davis        | B. Davis        | NBA    | GOS       | 2005-2006 | 20051106GSWNYK |
+|       88 | Pachulia        | Pachulia        | NBA    | ATL       | 2005-2006 | 20051102ATLGSW |
+|       89 | Murphy          | Murphy          | NBA    | GOS       | 2005-2006 | 20051102ATLGSW |
+|       90 | J. Richardson   | J. Richardson   | NBA    | GOS       | 2005-2006 | 20051106GSWNYK |
+|       90 | Richardson      | J. Richardson   | NBA    | GOS       | 2005-2006 | 20051102ATLGSW |
+|       91 | Childress       | Childress       | NBA    | ATL       | 2005-2006 | 20051102ATLGSW |
+|       92 | M. Dunleavy     | M. Dunleavy     | NBA    | GOS       | 2005-2006 | 20051120GSWLAC |
+|       92 | Dunleavy        | M. Dunleavy     | NBA    | GOS       | 2005-2006 | 20051102ATLGSW |
+|       93 | Foyle           | Foyle           | NBA    | GOS       | 2005-2006 | 20051102ATLGSW |
+|       94 | J. Smith        | J. Smith        | NBA    | ATL       | 2005-2006 | 20051102ATLGSW |
+|       95 | Harrington      | A. Harrington   | NBA    | ATL       | 2005-2006 | 20051102ATLGSW |
+|       95 | A. Harrington   | A. Harrington   | NBA    | ATL       | 2005-2006 | 20060128ATLCHI |
+|       96 | Lue             | Lue             | NBA    | ATL       | 2005-2006 | 20051102ATLGSW |
+|       97 | M. Williams     | M. Williams     | NBA    | ATL       | 2005-2006 | 20051105ATLPOR |
+|       97 | Williams        | M. Williams     | NBA    | ATL       | 2005-2006 | 20051102ATLGSW |
+|       98 | Pietrus         | Pietrus         | NBA    | GOS       | 2005-2006 | 20051102ATLGSW |
+|       99 | Edwards         | Edwards         | NBA    | ATL       | 2005-2006 | 20051102ATLGSW |
+|      100 | Stoudamire      | S. Stoudamire   | NBA    | ATL       | 2005-2006 | 20051102ATLGSW |
+|      100 | S. Stoudamire   | S. Stoudamire   | NBA    | ATL       | 2005-2006 | 20051112MEMATL |
+|      101 | Biedrins        | Biedrins        | NBA    | GOS       | 2005-2006 | 20051102ATLGSW |
+|      102 | Batista         | Batista         | NBA    | ATL       | 2005-2006 | 20051102ATLGSW |
+|      103 | Fisher          | Fisher          | NBA    | GOS       | 2005-2006 | 20051102ATLGSW |
+|      104 | Taft            | Taft            | NBA    | GOS       | 2005-2006 | 20051102ATLGSW |
+|      105 | Cheaney         | Cheaney         | NBA    | GOS       | 2005-2006 | 20051102ATLGSW |
+|      106 | D. Smith        | D. Smith        | NBA    | ATL       | 2005-2006 | 20051102ATLGSW |
+|      107 | Cabarkapa       | Cabarkapa       | NBA    | GOS       | 2005-2006 | 20051102ATLGSW |
+|      108 | A. Miles        | A. Miles        | NBA    | GOS       | 2005-2006 | 20051104UTAGSW |
+|      108 | Miles           | A. Miles        | NBA    | GOS       | 2005-2006 | 20051102ATLGSW |
+|      109 | Ivey            | Ivey            | NBA    | ATL       | 2005-2006 | 20051102ATLGSW |
+|      110 | Hinrich         | Hinrich         | NBA    | CHI       | 2005-2006 | 20051102CHACHI |
+|      111 | G. Wallace      | G. Wallace      | NBA    | CHA       | 2005-2006 | 20051217DETCHA |
+|      111 | Wallace         | G. Wallace      | NBA    | CHA       | 2005-2006 | 20051102CHACHI |
+|      112 | Nocioni         | Nocioni         | NBA    | CHI       | 2005-2006 | 20051102CHACHI |
+|      113 | Duhon           | Duhon           | NBA    | CHI       | 2005-2006 | 20051102CHACHI |
+|      114 | Knight          | Knight          | NBA    | CHA       | 2005-2006 | 20051102CHACHI |
+|      115 | Brezec          | Brezec          | NBA    | CHA       | 2005-2006 | 20051102CHACHI |
+|      116 | Rush            | Rush            | NBA    | CHA       | 2005-2006 | 20051102CHACHI |
+|      117 | Okafor          | Okafor          | NBA    | CHA       | 2005-2006 | 20051102CHACHI |
+|      118 | Chandler        | Chandler        | NBA    | CHI       | 2005-2006 | 20051102CHACHI |
+|      119 | Gordon          | Gordon          | NBA    | CHI       | 2005-2006 | 20051102CHACHI |
+|      120 | Sweetney        | Sweetney        | NBA    | CHI       | 2005-2006 | 20051102CHACHI |
+|      121 | Songaila        | Songaila        | NBA    | CHI       | 2005-2006 | 20051102CHACHI |
+|      122 | Deng            | Deng            | NBA    | CHI       | 2005-2006 | 20051102CHACHI |
+|      123 | Ely             | Ely             | NBA    | CHA       | 2005-2006 | 20051102CHACHI |
+|      124 | Harrington      | O. Harrington   | NBA    | CHI       | 2005-2006 | 20051102CHACHI |
+|      124 | O. Harrington   | O. Harrington   | NBA    | CHI       | 2005-2006 | 20060128ATLCHI |
+|      125 | Left1105-Tim T. | T. Thomas       | NBA    | CHI       | 2005-2006 | 20051102CHACHI |
+|      125 | T. Thomas       | T. Thomas       | NBA    | PHX       | 2005-2006 | Transaction Li |
+|      126 | Felton          | Felton          | NBA    | CHA       | 2005-2006 | 20051102CHACHI |
+|      127 | May             | May             | NBA    | CHA       | 2005-2006 | 20051102CHACHI |
+|      128 | Carroll         | Carroll         | NBA    | CHA       | 2005-2006 | 20051102CHACHI |
+|      129 | Jones           | J. Jones        | NBA    | CHA       | 2005-2006 | 20051102CHACHI |
+|      129 | J. Jones        | J. Jones        | NBA    | CHA       | 2005-2006 | 20051118CHAIND |
+|      130 | Allen           | M. Allen        | NBA    | CHI       | 2005-2006 | 20051102CHACHI |
+|      130 | M. Allen        | M. Allen        | NBA    | CHI       | 2005-2006 | 20051217BOSCHI |
+|      131 | Piatkowski      | Piatkowski      | NBA    | CHI       | 2005-2006 | 20051102CHACHI |
+|      132 | Okur            | Okur            | NBA    | UTH       | 2005-2006 | 20051102DALUTA |
+|      133 | Giricek         | Giricek         | NBA    | UTH       | 2005-2006 | 20051102DALUTA |
+|      134 | McLeod          | McLeod          | NBA    | UTH       | 2005-2006 | 20051102DALUTA |
+|      135 | Ostertag        | Ostertag        | NBA    | UTH       | 2005-2006 | 20051102DALUTA |
+|      136 | Kirilenko       | Kirilenko       | NBA    | UTH       | 2005-2006 | 20051102DALUTA |
+|      137 | J. Collins      | J. Collins      | NBA    | UTH       | 2005-2006 | 20051109UTANJN |
+|      137 | Collins         | J. Collins      | NBA    | UTH       | 2005-2006 | 20051102DALUTA |
+|      138 | Harpring        | Harpring        | NBA    | UTH       | 2005-2006 | 20051102DALUTA |
+|      139 | Williams        | D. Williams     | NBA    | UTH       | 2005-2006 | 20051102DALUTA |
+|      139 | D. Williams     | D. Williams     | NBA    | UTH       | 2005-2006 | 20051111UTATOR |
+|      140 | Brown           | D. Brown        | NBA    | UTH       | 2005-2006 | 20051102DALUTA |
+|      140 | D. Brown        | D. Brown        | NBA    | UTH       | 2005-2006 | 20051114NYKUTA |
+|      141 | Humphries       | Humphries       | NBA    | UTH       | 2005-2006 | 20051102DALUTA |
+|      142 | Palacio         | Palacio         | NBA    | UTH       | 2005-2006 | 20051102DALUTA |
+|      143 | J. O'Neal       | J. O'Neal       | NBA    | IND       | 2005-2006 | 20051103INDMIA |
+|      143 | O'Neal          | J. O'Neal       | NBA    | IND       | 2005-2006 | 20051102INDORL |
+|      144 | Battie          | Battie          | NBA    | ORL       | 2005-2006 | 20051102INDORL |
+|      145 | Artest          | R. Artest       | NBA    | SAC       | 2005-2006 | Transaction Li |
+|      145 | Artest          | Artest          | NBA    | IND       | 2005-2006 | 20051102INDORL |
+|      146 | Francis         | Francis         | NBA    | ORL       | 2005-2006 | 20051102INDORL |
+|      146 | Francis         | S. Francis      | NBA    | NYK       | 2005-2006 | Transaction Li |
+|      147 | Jackson         | S. Jackson      | NBA    | IND       | 2005-2006 | 20051102INDORL |
+|      147 | S. Jackson      | S. Jackson      | NBA    | IND       | 2005-2006 | 20051111NJNIND |
+|      148 | Stevenson       | Stevenson       | NBA    | ORL       | 2005-2006 | 20051102INDORL |
+|      149 | D. Howard       | D. Howard       | NBA    | ORL       | 2005-2006 | 20051108ORLHOU |
+|      149 | Howard          | D. Howard       | NBA    | ORL       | 2005-2006 | 20051102INDORL |
+|      150 | Croshere        | Croshere        | NBA    | IND       | 2005-2006 | 20051102INDORL |
+|      151 | Turkoglu        | Turkoglu        | NBA    | ORL       | 2005-2006 | 20051102INDORL |
+|      152 | Tinsley         | Tinsley         | NBA    | IND       | 2005-2006 | 20051102INDORL |
+|      153 | Jasikevicius    | Jasikevicius    | NBA    | IND       | 2005-2006 | 20051102INDORL |
+|      154 | Jones           | F. Jones        | NBA    | IND       | 2005-2006 | 20051102INDORL |
+|      154 | F. Jones        | F. Jones        | NBA    | IND       | 2005-2006 | 20051116INDCHA |
+|      155 | Granger         | Granger         | NBA    | IND       | 2005-2006 | 20051102INDORL |
+|      156 | B. Outlaw       | B. Outlaw       | NBA    | ORL       | 2005-2006 | 20051115CHAORL |
+|      156 | Outlaw          | B. Outlaw       | NBA    | ORL       | 2005-2006 | 20051102INDORL |
+|      157 | Bender          | Bender          | NBA    | IND       | 2005-2006 | 20051102INDORL |
+|      158 | J. Nelson       | J. Nelson       | NBA    | ORL       | 2005-2006 | 20060303ORLPHX |
+|      158 | Nelson          | J. Nelson       | NBA    | ORL       | 2005-2006 | 20051102INDORL |
+|      159 | Harrison        | Harrison        | NBA    | IND       | 2005-2006 | 20051102INDORL |
+|      160 | Cato            | K. Cato         | NBA    | DET       | 2005-2006 | Transaction Li |
+|      160 | Cato            | Cato            | NBA    | ORL       | 2005-2006 | 20051102INDORL |
+|      161 | Garrity         | Garrity         | NBA    | ORL       | 2005-2006 | 20051102INDORL |
+|      162 | Walker          | S. Walker       | NBA    | IND       | 2005-2006 | 20051102INDORL |
+|      162 | S. Walker       | S. Walker       | NBA    | IND       | 2005-2006 | 20051103INDMIA |
+|      163 | Evans           | R. Evans        | NBA    | DEN       | 2005-2006 | Transaction Li |
+|      163 | R. Evans        | R. Evans        | NBA    | DEN       | 2005-2006 | 20060301DETDEN |
+|      163 | R. Evans        | R. Evans        | NBA    | SEA       | 2005-2006 | 20060106SEADET |
+|      163 | Evans           | R. Evans        | NBA    | SEA       | 2005-2006 | 20051102LACSEA |
+|      164 | Kaman           | Kaman           | NBA    | LAC       | 2005-2006 | 20051102LACSEA |
+|      165 | Cassell         | Cassell         | NBA    | LAC       | 2005-2006 | 20051102LACSEA |
+|      166 | R. Allen        | R. Allen        | NBA    | SEA       | 2005-2006 | 20051116SEABOS |
+|      166 | Allen           | R. Allen        | NBA    | SEA       | 2005-2006 | 20051102LACSEA |
+|      167 | Brand           | Brand           | NBA    | LAC       | 2005-2006 | 20051102LACSEA |
+|      168 | Petro           | Petro           | NBA    | SEA       | 2005-2006 | 20051102LACSEA |
+|      169 | Ross            | Ross            | NBA    | LAC       | 2005-2006 | 20051102LACSEA |
+|      170 | Lewis           | R. Lewis        | NBA    | SEA       | 2005-2006 | 20060412SEANOK |
+|      170 | R. Lewis        | R. Lewis        | NBA    | SEA       | 2005-2006 | 20051102LACSEA |
+|      171 | Mobley          | Mobley          | NBA    | LAC       | 2005-2006 | 20051102LACSEA |
+|      172 | Collison        | Collison        | NBA    | SEA       | 2005-2006 | 20051102LACSEA |
+|      173 | Ridnour         | Ridnour         | NBA    | SEA       | 2005-2006 | 20051102LACSEA |
+|      174 | R. Murray       | R. Murray       | NBA    | SEA       | 2005-2006 | 20060128NJNSEA |
+|      174 | Murray          | R. Murray       | NBA    | CLE       | 2005-2006 | Transaction Li |
+|      174 | F. Murray       | R. Murray       | NBA    | CLE       | 2005-2006 | 20060408CLENJN |
+|      174 | Murray          | R. Murray       | NBA    | SEA       | 2005-2006 | 20051102LACSEA |
+|      175 | Fortson         | Fortson         | NBA    | SEA       | 2005-2006 | 20051102LACSEA |
+|      176 | Wilkins         | Wilkins         | NBA    | SEA       | 2005-2006 | 20051102LACSEA |
+|      177 | D. Ewing        | D. Ewing        | NBA    | LAC       | 2005-2006 | 20051217HOULAC |
+|      177 | Ewing           | D. Ewing        | NBA    | LAC       | 2005-2006 | 20051102LACSEA |
+|      178 | Singleton       | Singleton       | NBA    | LAC       | 2005-2006 | 20051102LACSEA |
+|      179 | Goldwire        | Goldwire        | NBA    | LAC       | 2005-2006 | 20051102LACSEA |
+|      180 | Radmanovic      | Radmanovic      | NBA    | SEA       | 2005-2006 | 20051102LACSEA |
+|      180 | Radmanovic      | V. Radmanovic   | NBA    | LAC       | 2005-2006 | Transaction Li |
+|      181 | Wilcox          | Wilcox          | NBA    | LAC       | 2005-2006 | 20051102LACSEA |
+|      181 | Wilcox          | C. Wilcox       | NBA    | SEA       | 2005-2006 | Transaction Li |
+|      182 | Brunson         | R. Brunson      | NBA    | HOU       | 2005-2006 | Transaction Li |
+|      182 | Brunson         | Brunson         | NBA    | SEA       | 2005-2006 | 20051102LACSEA |
+|      183 | Rebraca         | Rebraca         | NBA    | LAC       | 2005-2006 | 20051102LACSEA |
+|      185 | S. Parker       | S. Parker       | NBA    | LAL       | 2005-2006 | 20051129LALSAS |
+|      185 | Parker          | S. Parker       | NBA    | LAL       | 2005-2006 | 20051102LALDEN |
+|      186 | K. Bryant       | K. Bryant       | NBA    | LAL       | 2005-2006 | 20051223LALORL |
+|      186 | K. Bryant       | K. Bryant       | NBA    | LAL       | 2005-2006 | 20051102LALDEN |
+|      186 | Bryant          | K. Bryant       | NBA    | LAL       | 2005-2006 | 20051225LALMIA |
+|      187 | Odom            | Odom            | NBA    | LAL       | 2005-2006 | 20051102LALDEN |
+|      188 | Mihm            | Mihm            | NBA    | LAL       | 2005-2006 | 20051102LALDEN |
+|      189 | K. Brown        | K. Brown        | NBA    | LAL       | 2005-2006 | 20051108LALATL |
+|      189 | Brown           | K. Brown        | NBA    | LAL       | 2005-2006 | 20051102LALDEN |
+|      190 | George          | George          | NBA    | LAL       | 2005-2006 | 20051102LALDEN |
+|      191 | Cook            | Cook            | NBA    | LAL       | 2005-2006 | 20051102LALDEN |
+|      192 | McKie           | McKie           | NBA    | LAL       | 2005-2006 | 20051102LALDEN |
+|      193 | Vujacic         | Vujacic         | NBA    | LAL       | 2005-2006 | 20051102LALDEN |
+|      194 | Bynum           | A. Bynum        | NBA    | LAL       | 2005-2006 | 20051102LALDEN |
+|      194 | A. Bynum        | A. Bynum        | NBA    | LAL       | 2005-2006 | 20060411GSWLAL |
+|      195 | Profit          | Profit          | NBA    | LAL       | 2005-2006 | 20051102LALDEN |
+|      196 | Williams        | J. Williams     | NBA    | MIA       | 2005-2006 | 20051102MIAMEM |
+|      196 | J. Williams     | J. Williams     | NBA    | MIA       | 2005-2006 | 20051105MIAMIL |
+|      197 | Gasol           | Gasol           | NBA    | MEM       | 2005-2006 | 20051102MIAMEM |
+|      198 | Battier         | Battier         | NBA    | MEM       | 2005-2006 | 20051102MIAMEM |
+|      199 | Wright          | L. Wright       | NBA    | MEM       | 2005-2006 | 20051104MEMORL |
+|      199 | L. Wright       | L. Wright       | NBA    | MEM       | 2005-2006 | 20051102MIAMEM |
+|      200 | Walker          | A.Walker        | NBA    | MIA       | 2005-2006 | 20051102MIAMEM |
+|      200 | A. Walker       | A.Walker        | NBA    | MIA       | 2005-2006 | 20051103INDMIA |
+|      201 | Haslem          | Haslem          | NBA    | MIA       | 2005-2006 | 20051102MIAMEM |
+|      202 | E. Jones        | E. Jones        | NBA    | MEM       | 2005-2006 | 20051102MIAMEM |
+|      203 | O'Neal          | S. O'Neal       | NBA    | MIA       | 2005-2006 | 20051102MIAMEM |
+|      203 | S. O'Neal       | S. O'Neal       | NBA    | MIA       | 2005-2006 | 20051103INDMIA |
+|      204 | Wade            | Wade            | NBA    | MIA       | 2005-2006 | 20051102MIAMEM |
+|      205 | Stoudamire      | Stoudamire      | NBA    | MEM       | 2005-2006 | 20051102MIAMEM |
+|      206 | Mourning        | Mourning        | NBA    | MIA       | 2005-2006 | 20051102MIAMEM |
+|      207 | Payton          | Payton          | NBA    | MIA       | 2005-2006 | 20051102MIAMEM |
+|      208 | Tsakalidis      | Tsakalidis      | NBA    | MEM       | 2005-2006 | 20051102MIAMEM |
+|      209 | M. Miller       | M. Miller       | NBA    | MEM       | 2005-2006 | 20051120MEMDEN |
+|      209 | Miller          | M. Miller       | NBA    | MEM       | 2005-2006 | 20051102MIAMEM |
+|      210 | B. Jackson      | B. Jackson      | NBA    | MEM       | 2005-2006 | 20051105CLEMEM |
+|      210 | Jackson         | B. Jackson      | NBA    | MEM       | 2005-2006 | 20051102MIAMEM |
+|      211 | Kapono          | Kapono          | NBA    | MIA       | 2005-2006 | 20051102MIAMEM |
+|      212 | D. Jones        | D. Jones        | NBA    | MEM       | 2005-2006 | 20051102MIAMEM |
+|      213 | Roberts         | Roberts         | NBA    | MEM       | 2005-2006 | 20051102MIAMEM |
+|      214 | Wright          | D. Wright       | NBA    | MIA       | 2005-2006 | 20051112CHAMIA |
+|      214 | D. Wright       | D. Wright       | NBA    | MIA       | 2005-2006 | 20051102MIAMEM |
+|      215 | Barron          | Barron          | NBA    | MIA       | 2005-2006 | 20051102MIAMEM |
+|      216 | Simien          | Simien          | NBA    | MIA       | 2005-2006 | 20051102MIAMEM |
+|      217 | Burks           | Burks           | NBA    | MEM       | 2005-2006 | 20051102MIAMEM |
+|      218 | Warrick         | Warrick         | NBA    | MEM       | 2005-2006 | 20051102MIAMEM |
+|      219 | Walsh           | Walsh           | NBA    | MIA       | 2005-2006 | 20051102MIAMEM |
+|      220 | Krstic          | Krstic          | NBA    | NJN       | 2005-2006 | 20051102MILNJN |
+|      221 | Jefferson       | R. Jefferson    | NBA    | NJN       | 2005-2006 | 20051102MILNJN |
+|      221 | R. Jefferson    | R. Jefferson    | NBA    | NJN       | 2005-2006 | 20060120NJNBOS |
+|      222 | Kidd            | Kidd            | NBA    | NJN       | 2005-2006 | 20051102MILNJN |
+|      223 | J. Collins      | J. Collins      | NBA    | NJN       | 2005-2006 | 20051109UTANJN |
+|      223 | Collins         | J. Collins      | NBA    | NJN       | 2005-2006 | 20051102MILNJN |
+|      224 | V. Carter       | V. Carter       | NBA    | NJN       | 2005-2006 | 20060301NJNMIN |
+|      224 | Carter          | V. Carter       | NBA    | NJN       | 2005-2006 | 20051102MILNJN |
+|      225 | L. Murray       | L. Murray       | NBA    | NJN       | 2005-2006 | 20060128NJNSEA |
+|      225 | Murray          | L. Murray       | NBA    | NJN       | 2005-2006 | 20051102MILNJN |
+|      226 | McInnis         | McInnis         | NBA    | NJN       | 2005-2006 | 20051102MILNJN |
+|      228 | Robinson        | C. Robinson     | NBA    | NJN       | 2005-2006 | 20051102MILNJN |
+|      228 | C. Robinson     | C. Robinson     | NBA    | NJN       | 2005-2006 | 20051207NJNCHA |
+|      229 | M. Jackson      | M. Jackson      | NBA    | NJN       | 2005-2006 | 20051111NJNIND |
+|      229 | M. Jackson      | M. Jackson      | NBA    | NOK       | 2005-2006 | 20060308LALNOK |
+|      229 | Jackson         | M. Jackson      | NBA    | NJN       | 2005-2006 | 20051102MILNJN |
+|      229 | Jackson         | M. Jackson      | NBA    | NOK       | 2005-2006 | Transaction Li |
+|      230 | Planinic        | Planinic        | NBA    | NJN       | 2005-2006 | 20051102MILNJN |
+|      231 | Vaughn          | Vaughn          | NBA    | NJN       | 2005-2006 | 20051102MILNJN |
+|      232 | Padgett         | Padgett         | NBA    | NJN       | 2005-2006 | 20051102MILNJN |
+|      233 | Davis           | J. Davis        | NBA    | MIL       | 2005-2006 | 20051102MILNJN |
+|      233 | J. Davis        | J. Davis        | NBA    | MIL       | 2005-2006 | 20051212MILNYK |
+|      233 | J. Davis        | J. Davis        | NBA    | HOU       | 2005-2006 | 20051231GSWHOU |
+|      233 | Davis           | J. Davis        | NBA    | PHX       | 2005-2006 | Transaction Li |
+|      234 | Gaines          | Gaines          | NBA    | MIL       | 2005-2006 | 20051102MILNJN |
+|      235 | Curry           | Curry           | NBA    | NYK       | 2005-2006 | 20051102NYKBOS |
+|      236 | Blount          | Blount          | NBA    | BOS       | 2005-2006 | 20051102NYKBOS |
+|      236 | Blount          | M. Blount       | NBA    | MIN       | 2005-2006 | Transaction Li |
+|      237 | Q. Richardson   | Q. Richardson   | NBA    | NYK       | 2005-2006 | 20051106GSWNYK |
+|      237 | Richardson      | Q. Richardson   | NBA    | NYK       | 2005-2006 | 20051102NYKBOS |
+|      238 | LaFrentz        | LaFrentz        | NBA    | BOS       | 2005-2006 | 20051102NYKBOS |
+|      239 | D. West         | D. West         | NBA    | BOS       | 2005-2006 | 20051207BOSNOK |
+|      239 | West            | D. West         | NBA    | BOS       | 2005-2006 | 20051102NYKBOS |
+|      240 | Pierce          | Pierce          | NBA    | BOS       | 2005-2006 | 20051102NYKBOS |
+|      241 | Barnes          | Barnes          | NBA    | PHL       | 2005-2006 | 20051210PHINJN |
+|      241 | Barnes          | Barnes          | NBA    | NYK       | 2005-2006 | 20051102NYKBOS |
+|      242 | Davis           | A. Davis        | NBA    | TOR       | 2005-2006 | Transaction Li |
+|      242 | Davis           | A. Davis        | NBA    | NYK       | 2005-2006 | 20051104WASNYK |
+|      242 | A. Davis        | A. Davis        | NBA    | TOR       | 2005-2006 | 20060213TORMIN |
+|      242 | A. Davis        | A. Davis        | NBA    | NYK       | 2005-2006 | 20051102NYKBOS |
+|      243 | Davis           | R. Davis        | NBA    | BOS       | 2005-2006 | 20051105BOSCHA |
+|      243 | R. Davis        | R. Davis        | NBA    | BOS       | 2005-2006 | 20051102NYKBOS |
+|      243 | R. Davis        | R. Davis        | NBA    | MIN       | 2005-2006 | 20060127MINHOU |
+|      243 | Davis           | R. Davis        | NBA    | MIN       | 2005-2006 | Transaction Li |
+|      244 | Marbury         | Marbury         | NBA    | NYK       | 2005-2006 | 20051102NYKBOS |
+|      245 | Ariza           | Ariza           | NBA    | NYK       | 2005-2006 | 20051102NYKBOS |
+|      245 | Ariza           | T. Ariza        | NBA    | ORL       | 2005-2006 | Transaction Li |
+|      246 | Gomes           | Gomes           | NBA    | BOS       | 2005-2006 | 20051102NYKBOS |
+|      247 | A. Jefferson    | A. Jefferson    | NBA    | BOS       | 2005-2006 | 20060120NJNBOS |
+|      247 | Jefferson       | A. Jefferson    | NBA    | BOS       | 2005-2006 | 20051102NYKBOS |
+|      248 | Taylor          | M. Taylor       | NBA    | NYK       | 2005-2006 | 20051102NYKBOS |
+|      248 | M. Taylor       | M. Taylor       | NBA    | NYK       | 2005-2006 | 20051104WASNYK |
+|      249 | Crawford        | Crawford        | NBA    | NYK       | 2005-2006 | 20051102NYKBOS |
+|      250 | J. James        | J. James        | NBA    | NYK       | 2005-2006 | 20051212MILNYK |
+|      250 | James           | J. James        | NBA    | NYK       | 2005-2006 | 20051102NYKBOS |
+|      251 | Greene          | Greene          | NBA    | BOS       | 2005-2006 | 20051102NYKBOS |
+|      252 | Scalabrine      | Scalabrine      | NBA    | BOS       | 2005-2006 | 20051102NYKBOS |
+|      253 | Perkins         | Perkins         | NBA    | BOS       | 2005-2006 | 20051102NYKBOS |
+|      254 | Robinson        | N. Robinson     | NBA    | NYK       | 2005-2006 | 20051102NYKBOS |
+|      254 | N. Robinson     | N. Robinson     | NBA    | NYK       | 2005-2006 | 20051123NYKCHA |
+|      255 | Rose            | M. Rose         | NBA    | NYK       | 2005-2006 | 20051102NYKBOS |
+|      255 | M. Rose         | M. Rose         | NBA    | NYK       | 2005-2006 | 20060115NYKTOR |
+|      256 | Reed            | Reed            | NBA    | BOS       | 2005-2006 | 20051102NYKBOS |
+|      256 | Reed            | J. Reed         | NBA    | MIN       | 2005-2006 | Transaction Li |
+|      257 | Gooden          | Gooden          | NBA    | CLE       | 2005-2006 | 20051102NOKCLE |
+|      258 | Ilgauskas       | Ilgauskas       | NBA    | CLE       | 2005-2006 | 20051102NOKCLE |
+|      260 | L. James        | L. James        | NBA    | CLE       | 2005-2006 | 20051107CLETOR |
+|      260 | James           | L. James        | NBA    | CLE       | 2005-2006 | 20051102NOKCLE |
+|      261 | Hughes          | L. Hughes       | NBA    | CLE       | 2005-2006 | 20051102NOKCLE |
+|      261 | L. Hughes       | L. Hughes       | NBA    | CLE       | 2005-2006 | 20051130LACCLE |
+|      262 | Snow            | Snow            | NBA    | CLE       | 2005-2006 | 20051102NOKCLE |
+|      263 | Marshall        | D. Marshall     | NBA    | CLE       | 2005-2006 | 20051102NOKCLE |
+|      263 | D. Marshall     | D. Marshall     | NBA    | CLE       | 2005-2006 | 20060314CLEDAL |
+|      264 | Jones           | D. Jones        | NBA    | CLE       | 2005-2006 | 20051102NOKCLE |
+|      264 | D. Jones        | D. Jones        | NBA    | CLE       | 2005-2006 | 20051105CLEMEM |
+|      265 | Pavlovic        | Pavlovic        | NBA    | CLE       | 2005-2006 | 20051102NOKCLE |
+|      266 | Wilks           | Wilks           | NBA    | CLE       | 2005-2006 | 20051102NOKCLE |
+|      266 | Wilks           | M. Wilks        | NBA    | SEA       | 2005-2006 | Transaction Li |
+|      267 | Henderson       | Henderson       | NBA    | CLE       | 2005-2006 | 20051102NOKCLE |
+|      268 | Hamilton        | Hamilton        | NBA    | CLE       | 2005-2006 | 20051102NOKCLE |
+|      268 | Hamilton        | Z. Hamilton     | NBA    | PHL       | 2005-2006 | Transaction Li |
+|      269 | Jackson         | L. Jackson      | NBA    | CLE       | 2005-2006 | 20051102NOKCLE |
+|      269 | L. Jackson      | L. Jackson      | NBA    | CLE       | 2005-2006 | 20051105CLEMEM |
+|      270 | Hamilton        | R. Hamilton     | NBA    | DET       | 2005-2006 | 20051102PHIDET |
+|      270 | R. Hamilton     | R. Hamilton     | NBA    | DET       | 2005-2006 | 20051231DETCLE |
+|      271 | Billups         | Billups         | NBA    | DET       | 2005-2006 | 20051102PHIDET |
+|      272 | Prince          | Prince          | NBA    | DET       | 2005-2006 | 20051102PHIDET |
+|      273 | B. Wallace      | B. Wallace      | NBA    | DET       | 2005-2006 | 20051102PHIDET |
+|      274 | R. Wallace      | R. Wallace      | NBA    | DET       | 2005-2006 | 20051102PHIDET |
+|      275 | McDyess         | McDyess         | NBA    | DET       | 2005-2006 | 20051102PHIDET |
+|      276 | Evans           | M. Evans        | NBA    | DET       | 2005-2006 | 20051102PHIDET |
+|      276 | M. Evans        | M. Evans        | NBA    | DET       | 2005-2006 | 20060106SEADET |
+|      277 | Arroyo          | C. Arroyo       | NBA    | ORL       | 2005-2006 | Transaction Li |
+|      277 | Arroyo          | Arroyo          | NBA    | DET       | 2005-2006 | 20051102PHIDET |
+|      278 | Milicic         | D. Milicic      | NBA    | ORL       | 2005-2006 | Transaction Li |
+|      278 | Milicic         | Milicic         | NBA    | DET       | 2005-2006 | 20051102PHIDET |
+|      279 | Delfino         | Delfino         | NBA    | DET       | 2005-2006 | 20051102PHIDET |
+|      280 | Maxiell         | Maxiell         | NBA    | DET       | 2005-2006 | 20051102PHIDET |
+|      281 | Williams        | L. Williams     | NBA    | PHL       | 2005-2006 | 20051102PHIDET |
+|      281 | L. Williams     | L. Williams     | NBA    | PHL       | 2005-2006 | 20051115TORPHI |
+|      282 | Gai             | Gai             | NBA    | PHL       | 2005-2006 | 20051102PHIDET |
+|      283 | Jaric           | Jaric           | NBA    | MIN       | 2005-2006 | 20051102PORMIN |
+|      284 | Przybilla       | Przybilla       | NBA    | POR       | 2005-2006 | 20051102PORMIN |
+|      285 | Garnett         | Garnett         | NBA    | MIN       | 2005-2006 | 20051102PORMIN |
+|      286 | Miles           | D. Miles        | NBA    | POR       | 2005-2006 | 20051102PORMIN |
+|      286 | D. Miles        | D. Miles        | NBA    | POR       | 2005-2006 | 20051118GSWPOR |
+|      287 | Z. Randolph     | Z. Randolph     | NBA    | POR       | 2005-2006 | 20051129PORPHI |
+|      287 | Randolph        | Z. Randolph     | NBA    | POR       | 2005-2006 | 20051102PORMIN |
+|      288 | Szczerbiak      | W. Szczerbiak   | NBA    | BOS       | 2005-2006 | Transaction Li |
+|      288 | Szczerbiak      | Szczerbiak      | NBA    | MIN       | 2005-2006 | 20051102PORMIN |
+|      289 | Telfair         | Telfair         | NBA    | POR       | 2005-2006 | 20051102PORMIN |
+|      290 | Olowokandi      | Olowokandi      | NBA    | MIN       | 2005-2006 | 20051102PORMIN |
+|      290 | Olowokandi      | M. Olowokandi   | NBA    | BOS       | 2005-2006 | Transaction Li |
+|      291 | Smith           | C. Smith        | NBA    | POR       | 2005-2006 | 20051102PORMIN |
+|      291 | C. Smith        | C. Smith        | NBA    | DEN       | 2005-2006 | 20060227MILDEN |
+|      291 | Smith           | C. Smith        | NBA    | DEN       | 2005-2006 | Transaction Li |
+|      291 | C. Smith        | C. Smith        | NBA    | POR       | 2005-2006 | 20051127PORATL |
+|      292 | Hassell         | Hassell         | NBA    | MIN       | 2005-2006 | 20051102PORMIN |
+|      293 | McCants         | McCants         | NBA    | MIN       | 2005-2006 | 20051102PORMIN |
+|      294 | Patterson       | Patterson       | NBA    | POR       | 2005-2006 | 20051102PORMIN |
+|      294 | Patterson       | R. Patterson    | NBA    | DEN       | 2005-2006 | Transaction Li |
+|      295 | Dixon           | Dixon           | NBA    | POR       | 2005-2006 | 20051102PORMIN |
+|      296 | Jack            | Jack            | NBA    | POR       | 2005-2006 | 20051102PORMIN |
+|      297 | Ratliff         | Ratliff         | NBA    | POR       | 2005-2006 | 20051102PORMIN |
+|      298 | Carter          | A. Carter       | NBA    | MIN       | 2005-2006 | 20051102PORMIN |
+|      298 | A. Carter       | A. Carter       | NBA    | MIN       | 2005-2006 | 20060323MINNJN |
+|      299 | E. Griffin      | E. Griffin      | NBA    | MIN       | 2005-2006 | 20051218MINDAL |
+|      299 | Griffin         | E. Griffin      | NBA    | MIN       | 2005-2006 | 20051102PORMIN |
+|      300 | Madsen          | Madsen          | NBA    | MIN       | 2005-2006 | 20051102PORMIN |
+|      301 | Frahm           | Frahm           | NBA    | MIN       | 2005-2006 | 20051102PORMIN |
+|      301 | R. Frahm        | R. Frahm        | NBA    | HOU       | 2005-2006 | Transaction Li |
+|      301 | Frahm           | R. Frahm        | NBA    | HOU       | 2005-2006 | Transaction Li |
+|      302 | Ming            | Ming            | NBA    | HOU       | 2005-2006 | 20051102SACHOU |
+|      304 | Howard          | J. Howard       | NBA    | HOU       | 2005-2006 | 20051102SACHOU |
+|      304 | J. Howard       | J. Howard       | NBA    | HOU       | 2005-2006 | 20051108ORLHOU |
+|      305 | McGrady         | McGrady         | NBA    | HOU       | 2005-2006 | 20051102SACHOU |
+|      306 | Swift           | S. Swift        | NBA    | HOU       | 2005-2006 | 20051102SACHOU |
+|      306 | S. Swift        | S. Swift        | NBA    | HOU       | 2005-2006 | 20051215HOUSEA |
+|      307 | D. Anderson     | D. Anderson     | NBA    | HOU       | 2005-2006 | 20051110HOUMIA |
+|      307 | Anderson        | D. Anderson     | NBA    | MIA       | 2005-2006 | Transaction Li |
+|      307 | D. Anderson     | D. Anderson     | NBA    | MIA       | 2005-2006 | Transaction Li |
+|      307 | Anderson        | D. Anderson     | NBA    | HOU       | 2005-2006 | 20051102SACHOU |
+|      308 | Alston          | Alston          | NBA    | HOU       | 2005-2006 | 20051102SACHOU |
+|      309 | Wesley          | Wesley          | NBA    | HOU       | 2005-2006 | 20051102SACHOU |
+|      310 | Barry           | J. Barry        | NBA    | HOU       | 2005-2006 | 20051102SACHOU |
+|      310 | J. Barry        | J. Barry        | NBA    | HOU       | 2005-2006 | 20051117HOUSAS |
+|      311 | R. Bowen        | R. Bowen        | NBA    | HOU       | 2005-2006 | 20051117HOUSAS |
+|      311 | Bowen           | R. Bowen        | NBA    | HOU       | 2005-2006 | 20051102SACHOU |
+|      312 | Mutombo         | Mutombo         | NBA    | HOU       | 2005-2006 | 20051102SACHOU |
+|      313 | Arenas          | Arenas          | NBA    | WAS       | 2005-2006 | 20051102WASTOR |
+|      314 | J. Rose         | J. Rose         | NBA    | TOR       | 2005-2006 | 20060115NYKTOR |
+|      314 | Rose            | J. Rose         | NBA    | NYK       | 2005-2006 | Transaction Li |
+|      314 | J. Rose         | J. Rose         | NBA    | NYK       | 2005-2006 | 20060205HOUNYK |
+|      314 | Rose            | J. Rose         | NBA    | TOR       | 2005-2006 | 20051102WASTOR |
+|      315 | Jeffries        | Jeffries        | NBA    | WAS       | 2005-2006 | 20051102WASTOR |
+|      316 | Jamison         | Jamison         | NBA    | WAS       | 2005-2006 | 20051102WASTOR |
+|      317 | Graham          | J. Graham       | NBA    | TOR       | 2005-2006 | 20051102WASTOR |
+|      317 | J. Graham       | J. Graham       | NBA    | TOR       | 2005-2006 | 20051104NJNTOR |
+|      318 | James           | M. James        | NBA    | TOR       | 2005-2006 | 20051102WASTOR |
+|      318 | M. James        | M. James        | NBA    | TOR       | 2005-2006 | 20051107CLETOR |
+|      319 | Bosh            | Bosh            | NBA    | TOR       | 2005-2006 | 20051102WASTOR |
+|      320 | L. Woods        | L. Woods        | NBA    | TOR       | 2005-2006 | 20060115NYKTOR |
+|      320 | Woods           | L. Woods        | NBA    | TOR       | 2005-2006 | 20051102WASTOR |
+|      321 | A. Daniels      | A. Daniels      | NBA    | WAS       | 2005-2006 | 20060215WASDAL |
+|      321 | Daniels         | A. Daniels      | NBA    | WAS       | 2005-2006 | 20051102WASTOR |
+|      322 | Haywood         | Haywood         | NBA    | WAS       | 2005-2006 | 20051102WASTOR |
+|      323 | Thomas          | E. Thomas       | NBA    | WAS       | 2005-2006 | 20051102WASTOR |
+|      323 | E. Thomas       | E. Thomas       | NBA    | WAS       | 2005-2006 | 20051210CHIWAS |
+|      324 | C. Butler       | C. Butler       | NBA    | WAS       | 2005-2006 | 20060106WASNYK |
+|      324 | Butler          | C. Butler       | NBA    | WAS       | 2005-2006 | 20051102WASTOR |
+|      325 | Araujo          | Araujo          | NBA    | TOR       | 2005-2006 | 20051102WASTOR |
+|      326 | Peterson        | Peterson        | NBA    | TOR       | 2005-2006 | 20051102WASTOR |
+|      327 | Villanueva      | Villanueva      | NBA    | TOR       | 2005-2006 | 20051102WASTOR |
+|      328 | Hayes           | Hayes           | NBA    | WAS       | 2005-2006 | 20051102WASTOR |
+|      329 | Ruffin          | Ruffin          | NBA    | WAS       | 2005-2006 | 20051102WASTOR |
+|      330 | Bonner          | Bonner          | NBA    | TOR       | 2005-2006 | 20051102WASTOR |
+|      331 | Calderon        | Calderon        | NBA    | TOR       | 2005-2006 | 20051102WASTOR |
+|      332 | Atkins          | Atkins          | NBA    | WAS       | 2005-2006 | 20051102WASTOR |
+|      332 | Atkins          | C. Atkins       | NBA    | MEM       | 2005-2006 | Transaction Li |
+|      337 | A. Johnson      | A. Johnson      | NBA    | IND       | 2005-2006 | 20051105PHIIND |
+|      337 | Johnson         | A. Johnson      | NBA    | IND       | 2005-2006 | 20051103INDMIA |
+|      339 | Medvedenko      | Medvedenko      | NBA    | LAL       | 2005-2006 | 20051103PHXLAL |
+|      340 | Green           | D. Green        | NBA    | LAL       | 2005-2006 | 20051103PHXLAL |
+|      340 | D. Green        | D. Green        | NBA    | LAL       | 2005-2006 | 20060226BOSLAL |
+|      341 | Korolev         | Korolev         | NBA    | LAC       | 2005-2006 | 20051104ATLLAC |
+|      342 | Ndong           | Ndong           | NBA    | LAC       | 2005-2006 | 20051104ATLLAC |
+|      344 | Udrih           | Udrih           | NBA    | SAN       | 2005-2006 | 20051104CLESAS |
+|      346 | Thomas          | Thomas          | NBA    | MEM       | 2005-2006 | 20051104MEMORL |
+|      346 | Thomas          | Thomas          | NBA    | NJN       | 2005-2006 | Transaction Li |
+|      346 | Thomas          | Thomas          | NBA    | ATL       | 2005-2006 | 20051129ATLHOU |
+|      347 | Morris          | Morris          | NBA    | ORL       | 2005-2006 | 20051104MEMORL |
+|      348 | Hudson          | Hudson          | NBA    | MIN       | 2005-2006 | 20051104MINSEA |
+|      349 | Dupree          | Dupree          | NBA    | MIN       | 2005-2006 | 20051104MINSEA |
+|      350 | Potapenko       | V. Potapenko    | NBA    | SAC       | 2005-2006 | Transaction Li |
+|      350 | Potapenko       | Potapenko       | NBA    | SEA       | 2005-2006 | 20051104MINSEA |
+|      351 | Cleaves         | Cleaves         | NBA    | SEA       | 2005-2006 | 20051104MINSEA |
+|      353 | A. Williams     | A. Williams     | NBA    | NOK       | 2005-2006 | Transaction Li |
+|      353 | A. Williams     | A. Williams     | NBA    | TOR       | 2005-2006 | 20051104NJNTOR |
+|      353 | Williams        | A. Williams     | NBA    | NOK       | 2005-2006 | 20060201CHINOK |
+|      354 | T. Outlaw       | T. Outlaw       | NBA    | POR       | 2005-2006 | 20051125PORORL |
+|      354 | Outlaw          | T. Outlaw       | NBA    | POR       | 2005-2006 | 20051104PORDEN |
+|      355 | Blake           | Blake           | NBA    | POR       | 2005-2006 | 20051104PORDEN |
+|      356 | Webster         | Webster         | NBA    | POR       | 2005-2006 | 20051104PORDEN |
+|      357 | Watson          | E. Watson       | NBA    | SEA       | 2005-2006 | Transaction Li |
+|      357 | Watson          | Watson          | NBA    | DEN       | 2005-2006 | 20051104PORDEN |
+|      358 | Kleiza          | Kleiza          | NBA    | DEN       | 2005-2006 | 20051104PORDEN |
+|      362 | Frye            | Frye            | NBA    | NYK       | 2005-2006 | 20051104WASNYK |
+|      363 | Monia           | Monia           | NBA    | POR       | 2005-2006 | 20051105ATLPOR |
+|      363 | Monia           | S. Monia        | NBA    | SAC       | 2005-2006 | Transaction Li |
+|      366 | Bogans          | Bogans          | NBA    | CHA       | 2005-2006 | 20051105BOSCHA |
+|      366 | Bogans          | K. Bogans       | NBA    | HOU       | 2005-2006 | Transaction Li |
+|      367 | Dickau          | Dickau          | NBA    | BOS       | 2005-2006 | 20051105BOSCHA |
+|      372 | Head            | Head            | NBA    | HOU       | 2005-2006 | 20051105NOKHOU |
+|      373 | Booth           | Booth           | NBA    | WAS       | 2005-2006 | 20051105ORLWAS |
+|      377 | Lee             | Lee             | NBA    | NYK       | 2005-2006 | 20051106GSWNYK |
+|      380 | E. Williams     | E. Williams     | NBA    | TOR       | 2005-2006 | 20051107CLETOR |
+|      381 | Basden          | Basden          | NBA    | CHI       | 2005-2006 | 20051107SASCHI |
+|      382 | Owens           | Owens           | NBA    | UTH       | 2005-2006 | 20051107UTACHA |
+|      383 | Smith           | J. Smith        | NBA    | MIL       | 2005-2006 | 20051108GSWMIL |
+|      383 | J. Smith        | J. Smith        | NBA    | MIL       | 2005-2006 | 20051123PHIMIL |
+|      384 | Welsch          | Welsch          | NBA    | MIL       | 2005-2006 | 20051108GSWMIL |
+|      388 | Kasun           | Kasun           | NBA    | ORL       | 2005-2006 | 20051108ORLHOU |
+|      389 | Pargo           | Pargo           | NBA    | CHI       | 2005-2006 | 20051109GSWCHI |
+|      390 | Maggette        | Maggette        | NBA    | LAC       | 2005-2006 | 20051109LACWAS |
+|      391 | D. Taylor       | D. Taylor       | NBA    | WAS       | 2005-2006 | 20060106WASNYK |
+|      391 | Taylor          | D. Taylor       | NBA    | WAS       | 2005-2006 | 20051109LACWAS |
+|      392 | Pollard         | Pollard         | NBA    | IND       | 2005-2006 | 20051109MIAIND |
+|      397 | Sampson         | Sampson         | NBA    | SAC       | 2005-2006 | 20051109SACDEN |
+|      398 | Sanders         | Sanders         | NBA    | SAN       | 2005-2006 | 20051109SASCHA |
+|      399 | Burke           | P. Burke        | NBA    | PHX       | 2005-2006 | 20051110DETPHX |
+|      399 | P. Burke        | P. Burke        | NBA    | PHX       | 2005-2006 | 20051130INDPHX |
+|      401 | Posey           | Posey           | NBA    | MIA       | 2005-2006 | 20051110HOUMIA |
+|      402 | B. Robinson     | B. Robinson     | NBA    | CHA       | 2005-2006 | 20051207NJNCHA |
+|      402 | Robinson        | B. Robinson     | NBA    | CHA       | 2005-2006 | 20051111DALCHA |
+|      403 | Voskuhl         | Voskuhl         | NBA    | CHA       | 2005-2006 | 20051111DALCHA |
+|      404 | Burleson        | Burleson        | NBA    | CHA       | 2005-2006 | 20051111DALCHA |
+|      405 | D. Davis        | D. Davis        | NBA    | DET       | 2005-2006 | 20051202NYKDET |
+|      405 | Davis           | D. Davis        | NBA    | DET       | 2005-2006 | 20051111DETPOR |
+|      408 | Johnson         | L. Johnson      | NBA    | NJN       | 2005-2006 | 20051123NJNSAC |
+|      408 | L. Johnson      | L. Johnson      | NBA    | NOK       | 2005-2006 | 20060225NOKUTA |
+|      408 | Johnson         | L. Johnson      | NBA    | NOK       | 2005-2006 | Transaction Li |
+|      408 | L. Johnson      | L. Johnson      | NBA    | NJN       | 2005-2006 | 20051111NJNIND |
+|      409 | Hardaway        | Hardaway        | NBA    | NYK       | 2005-2006 | 20051111NYKGSW |
+|      410 | Marks           | Marks           | NBA    | SAN       | 2005-2006 | 20051111SASBOS |
+|      411 | Moore           | Moore           | NBA    | SEA       | 2005-2006 | 20051111SEAWAS |
+|      412 | Storey          | Storey          | NBA    | WAS       | 2005-2006 | 20051111SEAWAS |
+|      413 | Blatche         | Blatche         | NBA    | WAS       | 2005-2006 | 20051111SEAWAS |
+|      414 | Anderson        | A. Anderson     | NBA    | CHA       | 2005-2006 | 20051119CHAMIN |
+|      414 | A. Anderson     | A. Anderson     | NBA    | CHA       | 2005-2006 | 20051112CHAMIA |
+|      416 | Snyder          | Snyder          | NBA    | NOK       | 2005-2006 | 20051112DALNOK |
+|      417 | Ellis           | Ellis           | NBA    | GOS       | 2005-2006 | 20051112GSWPHX |
+|      418 | Gill            | Gill            | NBA    | IND       | 2005-2006 | 20051112INDMIL |
+|      419 | Dooling         | Dooling         | NBA    | ORL       | 2005-2006 | 20051113CLEORL |
+|      420 | Norris          | Norris          | NBA    | HOU       | 2005-2006 | 20051113HOUBOS |
+|      420 | Norris          | M. Norris       | NBA    | NOK       | 2005-2006 | Transaction Li |
+|      421 | McCarty         | McCarty         | NBA    | LAC       | 2005-2006 | 20051113LACPHI |
+|      422 | Hodge           | Hodge           | NBA    | DEN       | 2005-2006 | 20051113MINDEN |
+|      423 | Butler          | J. Butler       | NBA    | NYK       | 2005-2006 | 20051113NYKSAC |
+|      423 | J. Butler       | J. Butler       | NBA    | NYK       | 2005-2006 | 20060106WASNYK |
+|      424 | Sow             | Sow             | NBA    | TOR       | 2005-2006 | 20051113SEATOR |
+|      426 | Miles           | Miles           | NBA    | UTH       | 2005-2006 | 20051114NYKUTA |
+|      427 | Whaley          | Whaley          | NBA    | UTH       | 2005-2006 | 20051114NYKUTA |
+|      430 | Powell          | J. Powell       | NBA    | DAL       | 2005-2006 | 20051115DENDAL |
+|      430 | J. Powell       | J. Powell       | NBA    | DAL       | 2005-2006 | 20051226INDDAL |
+|      431 | E. Johnson      | E. Johnson      | NBA    | MIL       | 2005-2006 | 20051121MILUTA |
+|      431 | Johnson         | E. Johnson      | NBA    | MIL       | 2005-2006 | 20051115MILLAC |
+|      432 | Bradley         | Bradley         | NBA    | PHL       | 2005-2006 | 20051115TORPHI |
+|      433 | S. Randolph     | S. Randolph     | NBA    | PHL       | 2005-2006 | 20051228PHIPOR |
+|      433 | Randolph        | S. Randolph     | NBA    | PHL       | 2005-2006 | 20051115TORPHI |
+|      436 | D. Martin       | D. Martin       | NBA    | TOR       | 2005-2006 | 20060310DENTOR |
+|      436 | Martin          | D. Martin       | NBA    | TOR       | 2005-2006 | 20051116PHITOR |
+|      438 | R. Marshall     | R. Marshall     | NBA    | DAL       | 2005-2006 | 20060314CLEDAL |
+|      438 | Marshall        | R. Marshall     | NBA    | DAL       | 2005-2006 | 20051119DETDAL |
+|      439 | Mbenga          | Mbenga          | NBA    | DAL       | 2005-2006 | 20051119DETDAL |
+|      440 | Gentry          | Gentry          | NBA    | PHX       | 2005-2006 | 20051119PHXSAS |
+|      441 | Scales          | Scales          | NBA    | SAN       | 2005-2006 | 20051119PHXSAS |
+|      443 | Eisley          | H. Eisley       | NBA    | DEN       | 2005-2006 | Transaction Li |
+|      443 | Eisley          | Eisley          | NBA    | LAC       | 2005-2006 | 20051120GSWLAC |
+|      444 | A. Wright       | A. Wright       | NBA    | NJN       | 2005-2006 | 20060113NJNMEM |
+|      444 | Wright          | A. Wright       | NBA    | NJN       | 2005-2006 | 20051123NJNSAC |
+|      449 | Baxter          | Baxter          | NBA    | HOU       | 2005-2006 | 20051123PHXHOU |
+|      449 | Baxter          | L. Baxter       | NBA    | CHA       | 2005-2006 | Transaction Li |
+|      450 | Khryapa         | Khryapa         | NBA    | POR       | 2005-2006 | 20051123PORMIA |
+|      451 | Fitch           | Fitch           | NBA    | MIA       | 2005-2006 | 20051123PORMIA |
+|      451 | Fitch           | G. Fitch        | NBA    | HOU       | 2005-2006 | Transaction Li |
+|      452 | Anderson        | S. Anderson     | NBA    | MIA       | 2005-2006 | 20051123PORMIA |
+|      452 | S. Anderson     | S. Anderson     | NBA    | MIA       | 2005-2006 | 20051214MIAMIL |
+|      453 | Diogu           | Diogu           | NBA    | GOS       | 2005-2006 | 20051123SASGSW |
+|      454 | Wafer           | Wafer           | NBA    | LAL       | 2005-2006 | 20051124SEALAL |
+|      456 | Augmon          | Augmon          | NBA    | ORL       | 2005-2006 | 20051125PORORL |
+|      457 | Roberson        | Roberson        | NBA    | MEM       | 2005-2006 | 20051126MEMDAL |
+|      458 | Dalembert       | Dalembert       | NBA    | PHL       | 2005-2006 | 20051126PHINYK |
+|      459 | Walton          | Walton          | NBA    | LAL       | 2005-2006 | 20051127NJNLAL |
+|      460 | Doleac          | Doleac          | NBA    | MIA       | 2005-2006 | 20051128NYKMIA |
+|      463 | Thompson        | Thompson        | NBA    | PHX       | 2005-2006 | 20051130INDPHX |
+|      464 | Ford            | Ford            | NBA    | PHX       | 2005-2006 | 20051130INDPHX |
+|      466 | Seung-Jin       | Seung-Jin       | NBA    | POR       | 2005-2006 | 20051130PORWAS |
+|      467 | Griffin         | A. Griffin      | NBA    | DAL       | 2005-2006 | 20051201SASDAL |
+|      467 | A. Griffin      | A. Griffin      | NBA    | DAL       | 2005-2006 | 20051218MINDAL |
+|      468 | Foster          | Foster          | NBA    | IND       | 2005-2006 | 20051202INDPOR |
+|      470 | Diener          | Diener          | NBA    | ORL       | 2005-2006 | 20051202ORLMEM |
+|      472 | R. Swift        | R. Swift        | NBA    | SEA       | 2005-2006 | 20060203SEAHOU |
+|      472 | Swift           | R. Swift        | NBA    | SEA       | 2005-2006 | 20051206NYKSEA |
+|      477 | Graham          | S. Graham       | NBA    | CLE       | 2005-2006 | Transaction Li |
+|      477 | S. Graham       | S. Graham       | NBA    | CHI       | 2005-2006 | 20060125CHITOR |
+|      477 | Graham          | S. Graham       | NBA    | HOU       | 2005-2006 | 20051211HOUPOR |
+|      477 | Graham          | S. Graham       | NBA    | CHI       | 2005-2006 | Transaction Li |
+|      477 | S. Graham       | S. Graham       | NBA    | HOU       | 2005-2006 | 20051221TORHOU |
+|      481 | Woods           | Q. Woods        | NBA    | NYK       | 2005-2006 | 20051212MILNYK |
+|      481 | Q. Woods        | Q. Woods        | NBA    | NYK       | 2005-2006 | 20060203NYKTOR |
+|      482 | Weiss           | Weiss           | NBA    | SEA       | 2005-2006 | 20051213GSWSEA |
+|      483 | Livingston      | Livingston      | NBA    | LAC       | 2005-2006 | 20051214LACNOK |
+|      484 | Cardinal        | Cardinal        | NBA    | MEM       | 2005-2006 | 20051214LALMEM |
+|      486 | G. Hill         | G. Hill         | NBA    | ORL       | 2005-2006 | 20051214ORLNYK |
+|      487 | J. Jackson      | J. Jackson      | NBA    | MIL       | 2005-2006 | 20060104CLEMIL |
+|      487 | Jackson         | J. Jackson      | NBA    | MIL       | 2005-2006 | 20051216MILBOS |
+|      488 | Banks           | M. Banks        | NBA    | MIN       | 2005-2006 | Transaction Li |
+|      488 | Banks           | Banks           | NBA    | BOS       | 2005-2006 | 20051216MILBOS |
+|      489 | Newble          | Newble          | NBA    | CLE       | 2005-2006 | 20051220UTACLE |
+|      490 | Lampe           | Lampe           | NBA    | NOK       | 2005-2006 | 20051221NOKMIN |
+|      490 | Lampe           | M. Lampe        | NBA    | HOU       | 2005-2006 | Transaction Li |
+|      491 | Tskitishvili    | N. Tskitishvili | NBA    | PHX       | 2005-2006 | Transaction Li |
+|      491 | Tskitishvili    | Tskitishvili    | NBA    | MIN       | 2005-2006 | 20051221NOKMIN |
+|      492 | Stackhouse      | Stackhouse      | NBA    | DAL       | 2005-2006 | 20051223DALSEA |
+|      498 | Lucas           | Lucas           | NBA    | HOU       | 2005-2006 | 20051231GSWHOU |
+|      500 | Andriuskevicius | Andriuskevicius | NBA    | CLE       | 2005-2006 | 20060105HOUCLE |
+|      501 | T. Allen        | T. Allen        | NBA    | BOS       | 2005-2006 | 20060326CHIBOS |
+|      501 | Allen           | T. Allen        | NBA    | BOS       | 2005-2006 | 20060106ATLBOS |
+|      502 | Holcomb         | Holcomb         | NBA    | CHI       | 2005-2006 | 20060106CHIMIL |
+|      505 | Varejao         | Varejao         | NBA    | CLE       | 2005-2006 | 20060112CLELAL |
+|      508 | Hayes           | Hayes           | NBA    | HOU       | 2005-2006 | 20060118DALHOU |
+|      509 | Wright          | B. Wright       | NBA    | MIN       | 2005-2006 | 20060124DETMIN |
+|      509 | B. Wright       | B. Wright       | NBA    | MIN       | 2005-2006 | 20060125MINMEM |
+|      510 | A. Johnson      | A. Johnson      | NBA    | DET       | 2005-2006 | 20060417DETMIL |
+|      510 | Johnson         | A. Johnson      | NBA    | DET       | 2005-2006 | 20060124DETMIN |
+|      514 | Green           | G. Green        | NBA    | BOS       | 2005-2006 | 20060203LACBOS |
+|      514 | G. Green        | G. Green        | NBA    | BOS       | 2005-2006 | 20060320LALBOS |
+|      515 | L. Hunter       | L. Hunter       | NBA    | DET       | 2005-2006 | 20060329DETPHI |
+|      515 | Hunter          | L. Hunter       | NBA    | DET       | 2005-2006 | 20060207DETATL |
+|      516 | Turiaf          | Turiaf          | NBA    | LAL       | 2005-2006 | 20060208LALHOU |
+|      517 | D. Jones        | D. Jones        | NBA    | BOS       | 2005-2006 | 20060314BOSMEM |
+|      517 | Jones           | D. Jones        | NBA    | BOS       | 2005-2006 | 20060210PORBOS |
+|      518 | Boozer          | Boozer          | NBA    | UTH       | 2005-2006 | 20060210UTAMIN |
+|      519 | Delk            | T. Delk         | NBA    | DET       | 2005-2006 | Transaction Li |
+|      519 | Delk            | Delk            | NBA    | ATL       | 2005-2006 | 20060212ATLSAC |
+|      520 | Russell         | B. Russell      | NBA    | SEA       | 2005-2006 | Transaction Li |
+|      520 | Russell         | Russell         | NBA    | DEN       | 2005-2006 | 20060215PHXDEN |
+|      521 | Acker           | Acker           | NBA    | DET       | 2005-2006 | 20060221ATLDET |
+|      525 | Barrett         | Barrett         | NBA    | PHX       | 2005-2006 | 20060301MILPHX |
+|      525 | Barrett         | A. Barrett      | NBA    | TOR       | 2005-2006 | Transaction Li |
+|      525 | A. Barrett      | A. Barrett      | NBA    | TOR       | 2005-2006 | Transaction Li |
+|      527 | Baker           | Baker           | NBA    | LAC       | 2005-2006 | 20060301NOKLAC |
+|      529 | Schenscher      | Schenscher      | NBA    | CHI       | 2005-2006 | 20060305CHICLE |
+|      530 | Felix           | Felix           | NBA    | SEA       | 2005-2006 | 20060305UTASEA |
+|      531 | B. Thomas       | B. Thomas       | NBA    | WAS       | 2005-2006 | 20060311DETWAS |
+|      532 | W. Bynum        | W. Bynum        | NBA    | GOS       | 2005-2006 | 20060411GSWLAL |
+|      532 | Bynum           | W. Bynum        | NBA    | GOS       | 2005-2006 | 20060319PHIGSW |
+|      533 | Livingston      | Livingston      | NBA    | CHI       | 2005-2006 | 20060322CHIIND |
+|      537 | Stoudemire      | Stoudemire      | NBA    | PHX       | 2005-2006 | 20060323PORPHX |
+|      540 | Grundy          | Grundy          | NBA    | ATL       | 2005-2006 | 20060329INDATL |
+|      541 | W. Green        | W. Green        | NBA    | PHL       | 2005-2006 | 20060407BOSPHI |
+|      541 | Green           | W. Green        | NBA    | PHL       | 2005-2006 | 20060404PHICLE |
+|      544 | Udoka           | Udoka           | NBA    | NYK       | 2005-2006 | 20060407INDNYK |
+|      545 | Fizer           | Fizer           | NBA    | NOK       | 2005-2006 | 20060416NOKSAC |
+|      547 | Zimmerman       | Zimmerman       | NBA    | NJN       | 2005-2006 | 20060418NJNPHI |
+|      548 | Podkolzin       | Podkolzin       | NBA    | DAL       | 2005-2006 | 20060419LACDAL |
++----------+-----------------+-----------------+--------+-----------+-----------+----------------+
